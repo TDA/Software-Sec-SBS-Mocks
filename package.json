@@ -1,0 +1,33 @@
+{
+  "name": "SoftwareSecSBSMocks",
+  "version": "1.0.0",
+  "description": "Mocks for our SBS for SS",
+  "main": "src/index.html",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-jshint": "0.11.3",
+    "load-grunt-tasks": "3.2.0",
+    "grunt-jscs": "2.1.0",
+    "time-grunt": "1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TDA/Software-Sec-SBS-Mocks.git"
+  },
+  "keywords": [
+    "SBS"
+  ],
+  "author": "Sai Pc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TDA/Software-Sec-SBS-Mocks/issues"
+  },
+  "homepage": "https://github.com/TDA/Software-Sec-SBS-Mocks"
+}
