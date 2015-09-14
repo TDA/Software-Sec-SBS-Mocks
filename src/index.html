@@ -16,15 +16,21 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-    <nav class="container">
+    <div class="container">
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div class="header row">
-            <div id="banner"><img src="img/HeaderGraphic.jpg" alt="Banner for SBS"/></div>
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="" alt=""/></li>
+                    <li><img src="" alt=""/></li>
+                    <li><img src="" alt=""/></li>
+                </ul>
+            </div>
         </div>
-        <nav class="row navbar navbar-default navbar-inverse">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
             <p class="navbar-brand" style="margin: 0">SBS</p>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#" target="_blank">Test Home</a></li>
@@ -36,7 +42,7 @@
 
         <div class="contentbody row">
             <div class="main col-md-8">
-                <h1>Page Title</h1>
+                <h1>SecBank System</h1>
                 <h2>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget congue lacus. Suspendisse
                     finibus elit id congue tincidunt. Integer vel justo lectus. Donec augue tortor, congue vitae
@@ -62,12 +68,12 @@
                     massa non ante mattis porttitor. Cras luctus auctor ornare.Integer sit amet quam id ipsum convallis laoreet. Maecenas vitae ultrices ante. Proin vehicula id
                     ligula vitae euismod.
                 </p>
-                <p>
+                <div class="row text-center social">
                     <a href="https://facebook.com"><img src="img/facebook.jpg" alt="Facebook"/></a>
                     <a href="http://twitter.com"><img src="img/twitter.jpeg" alt="Twitter"/></a>
                     <a href="http://linkedin.com"><img src="img/linkedin.png" alt="Linkedin"/></a>
                     <a href="http://youtube.com"><img src="img/youtube.png" alt="Youtube"/></a>
-                </p>
+                </div>
             </div>
             <div class="sidebar col-md-4">
                 <img src="img/DOS-banners_Homecoming.jpg">
@@ -151,7 +157,7 @@
                 </ul>
             </div>
         </div>
-        <div class="footerlinks">
+        <div class="footerlinks row text-right">
             <a href="#">Copyright and Trademark</a>
             <a href="#">Accessibility</a>
             <a href="#">Privacy</a>

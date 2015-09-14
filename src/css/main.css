@@ -1,272 +1,106 @@
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+body {
+    background: #c6c6c6; /* Old browsers */
+    background: -moz-linear-gradient(top, #c6c6c6 0%, #d3d3d3 50%, #dedede 69%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c6c6c6), color-stop(50%,#d3d3d3), color-stop(69%,#dedede), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c6c6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
+.header div {
+    margin: 0;
+    padding: 0;
+}
+.header div img {
+    margin: 0;
+    padding: 0;
     display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+    width: 100%;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+p {
+    text-align: justify;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+.main p a {
+    color: #cc0000;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
+.main p a img {
+    height: 32px;
+    width: 32px;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+.social img {
+    height: 2rem;
+    width: 2rem;
+    height: 2em;
+    width: 2em;
+}
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
+h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom: solid 2px #ccc;
+    padding-bottom: 0.5em;
+}
+
+
+.sidebar h2 {
+    border-bottom: none;
+    color: #ffd60c;
+    font-size: 1.5em;
+    margin-bottom: 1px;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+.sidebar p {
+    margin: 1px;
+}
+
+.footer {
+    border-top: solid 2px #000;
+    padding: 8px;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer ul {
+    list-style: none;
+}
+.footer li:first-child {
+    font-weight: 600;
     color: #000;
-    padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
+.footerlinks {
+    background: #000;
+    height: 1.5em;
+    color: #fff;
+    text-align: right;
+    padding: 4px 2px;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+.footerlinks a {
+    min-width: 4em;
+    display: inline-block;
+    color: inherit;
+    border-left: solid 1px #fff;
+    padding:0 0.5em;
+    text-decoration: none;
 }
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.footerlinks a:first-child {
+    border-left: none;
 }
