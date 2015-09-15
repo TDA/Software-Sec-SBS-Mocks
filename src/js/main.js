@@ -30,7 +30,6 @@ $(function() {
       target: '+=1'
     });
 
-  $('')
   $('.jcarousel-pagination')
     .on('jcarouselpagination:active', 'a', function() {
       $(this).addClass('active');
@@ -38,5 +37,7 @@ $(function() {
     .on('jcarouselpagination:inactive', 'a', function() {
       $(this).removeClass('active');
     })
-    .jcarouselPagination();
+    .jcarouselPagination({
+      perPage: 1
+    });
 });
