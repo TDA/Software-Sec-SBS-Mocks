@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Mock Login</title>
+    <title>Mock Signup</title>
     <meta name="author" content="Sai Pc.">
     <meta name="description" content="Mock screens for SBS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +27,8 @@
                 <p class="navbar-brand" style="margin: 0">SBS</p>
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Test Home</a></li>
-                    <li><a href="signup.html">Sign up</a></li>
-                    <li class="active"><a href="login.html">Login</a></li>
+                    <li class="active"><a href="signup.html">Sign up</a></li>
+                    <li><a href="login.html">Login</a></li>
                     <li><a href="admin.html">Admin Panel</a></li>
                 </ul>
             </div>
@@ -39,9 +39,9 @@
     <div class="contentbody row">
         <div class="main col-md-12 text-center">
             <div class="jumbotron">
-                <h1>SecBank System - Login</h1>
+                <h1>SecBank System - Signup</h1>
             </div>
-            <form action="/login" method="post">
+            <form action="/signup" method="post">
 
                 <div class="input-group input-group-lg col-md-3 col-centered">
                     <label class="input-group-addon" id="usernameLabel" for="username">Username: </label>
@@ -52,7 +52,13 @@
                     <label class="input-group-addon" id="passwordLabel" for="password">Password: </label>
                     <input type="password" class="form-control" placeholder="Password" aria-describedby="passwordLabel" name="password" id="password">
                 </div>
-                <input type="submit" class="btn btn-lg btn-default" value="Login">
+
+                <div class="input-group input-group-lg col-md-3 col-centered">
+                    <label class="input-group-addon" id="dobLabel" for="dob">Date of Birth: </label>
+                    <input type="date" class="form-control" placeholder="mm/dd/yyyy" aria-describedby="dobLabel" name="dob" id="dob">
+                </div>
+
+                <input type="submit" class="btn btn-lg btn-default" value="Signup">
             </form>
         </div>
     </div>
