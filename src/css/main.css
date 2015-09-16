@@ -224,3 +224,12 @@ have a fixed width and height (but it's not required).
     opacity: 1;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+form div {
+    padding: 8px;
+}
