@@ -242,3 +242,8 @@ form div {
 .input-group label {
     min-width: 12em;
 }
+
+.ul-horizontal ul li{
+    display: inline-block;
+    margin-right: 2em;
+}
